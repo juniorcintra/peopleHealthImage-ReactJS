@@ -31,7 +31,6 @@ button {
   font-family: "Roboto", sans-serif;
   border: 0;
   cursor: pointer;
-  background-color: transparent;
 }
 input {
 }

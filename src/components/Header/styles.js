@@ -19,12 +19,15 @@ export const Logo = styled.img`
 export const MenuDiv = styled.div`
   display: flex;
   gap: 25px;
+  height: 30px;
+  align-items: center;
 `;
 
 export const MenuText = styled.a`
   font-size: 13px;
   cursor: pointer;
   color: ${({ theme }) => theme.COLORS.primary};
+  padding-bottom: 6px;
 
   &:hover {
     border-bottom: 2px solid ${({ theme }) => theme.COLORS.primary};

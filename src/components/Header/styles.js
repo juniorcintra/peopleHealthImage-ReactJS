@@ -7,6 +7,9 @@ export const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 0;
 `;
 
 export const Logo = styled.img`
@@ -21,9 +24,9 @@ export const MenuDiv = styled.div`
 export const MenuText = styled.a`
   font-size: 13px;
   cursor: pointer;
-  color: ${({ theme }) => theme.COLORS.primary };
+  color: ${({ theme }) => theme.COLORS.primary};
 
   &:hover {
-    border-bottom: 2px solid ${({ theme }) => theme.COLORS.primary };
+    border-bottom: 2px solid ${({ theme }) => theme.COLORS.primary};
   }
 `;

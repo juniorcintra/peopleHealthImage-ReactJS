@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   height: 100%;
-  background-color: #fff;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
@@ -14,11 +12,8 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 1180px;
 `;
 
 export const BackgroundDiv = styled.div`
@@ -28,8 +23,6 @@ export const BackgroundDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  gap: 80px;
   position: relative;
 
   &:after {
@@ -45,16 +38,39 @@ export const BackgroundDiv = styled.div`
   }
 `;
 
-export const BackgroundContent = styled.div``;
+export const BackgroundContent = styled.div`
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+  }
+`;
 
-export const Video = styled.video`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: middle;
-  z-index: -1;
-  overflow: hidden;
+export const MainInfo = styled.div`
+  color: ${({ theme }) => theme.COLORS.white};
+  width: 90%;
+  max-width: 710px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 5%;
+`;
+export const MainTitle = styled.h1`
+  font-weight: 900;
+`;
+export const MainParagraph = styled.p`
+  font-weight: 400;
+`;
+export const MainLink = styled.a`
+  background-color: ${({ theme }) => theme.COLORS.primary};
+  width: 100px;
+  color: ${({ theme }) => theme.COLORS.white};
+  padding: 10px 6px;
+  text-align: center;
+  border-radius: 5px;
 `;

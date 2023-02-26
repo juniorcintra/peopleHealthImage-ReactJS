@@ -12,7 +12,7 @@ export default function Header() {
       <MenuDiv>
         <MenuText href="#home">Home</MenuText>
         <MenuText href="#sobre">Sobre nós</MenuText>
-        <MenuText>Serviços</MenuText>
+        <MenuText href="#servicos">Serviços</MenuText>
         <MenuText>Staff de Profissionais</MenuText>
         <MenuText>Contato</MenuText>
         {/* <MenuText>Informações</MenuText> */}

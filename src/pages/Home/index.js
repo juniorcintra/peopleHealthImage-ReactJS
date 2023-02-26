@@ -5,6 +5,7 @@ import BackgroundVideo from "../../assets/mp4/background.mp4";
 import Header from "../../components/Header";
 import InfoBar from "../../components/InfoBar";
 import ScrollToTop from "../../components/ScrollToTop";
+import Services from "../../components/Sections/Services";
 import Sobre from "../../components/Sections/SobreNos";
 
 import {
@@ -45,6 +46,7 @@ export default function Home() {
           </BackgroundContent>
         </BackgroundDiv>
         <Sobre />
+        <Services />
         <ScrollToTop />
       </Content>
     </Container>

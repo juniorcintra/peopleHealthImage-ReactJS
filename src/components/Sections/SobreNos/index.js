@@ -42,7 +42,7 @@ export default function Sobre() {
             <TextInfo>- Transparência</TextInfo>
           </DivInfo>
         </DivLeft>
-        <img src={SobreNosIMG} />
+        <img src={SobreNosIMG} alt="img" />
       </Content>
     </Container>
   );

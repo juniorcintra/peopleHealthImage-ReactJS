@@ -4,6 +4,8 @@ import BackgroundVideo from "../../assets/mp4/background.mp4";
 
 import Header from "../../components/Header";
 import InfoBar from "../../components/InfoBar";
+import ScrollToTop from "../../components/ScrollToTop";
+import Sobre from "../../components/Sections/SobreNos";
 
 import {
   Container,
@@ -23,7 +25,8 @@ export default function Home() {
 
       <Content>
         <Header />
-        <BackgroundDiv>
+
+        <BackgroundDiv id="home">
           <BackgroundContent>
             <video autoPlay="autoplay" loop="loop" muted="muted">
               <source src={BackgroundVideo} />
@@ -37,10 +40,12 @@ export default function Home() {
                 nossos profissionais treinados para fazê-lo se sentir seguro e
                 confiante.
               </MainParagraph>
-              <MainLink href="">Ler mais</MainLink>
+              <MainLink href="#sobre">Ler mais</MainLink>
             </MainInfo>
           </BackgroundContent>
         </BackgroundDiv>
+        <Sobre />
+        <ScrollToTop />
       </Content>
     </Container>
   );

@@ -41,6 +41,20 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   list-style: none;
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+#home {
+  scroll-margin-top: 10em;
+}
+section  {
+  scroll-margin-top: 0em;
+}
+
 `;
 
 export default GlobalStyle;

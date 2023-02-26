@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +15,7 @@ export const Content = styled.div`
   height: 100%;
 `;
 
-export const BackgroundDiv = styled.div`
+export const BackgroundDiv = styled.section`
   width: 100%;
   height: 680px;
   display: flex;
